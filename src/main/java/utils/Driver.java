@@ -26,9 +26,10 @@ public class Driver {
                     drivers.set(new EdgeDriver());
                 }
                 default -> {
+                     System.setProperty("webdriver.chrome.whitelistedIps", "");
                     WebDriverManager.chromedriver().setup();
                     drivers.set(new ChromeDriver());
-                    System.setProperty("webdriver.chrome.whitelistedIps", "");
+                  
                 }
             }
         }
