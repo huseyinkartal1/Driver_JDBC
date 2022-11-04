@@ -28,6 +28,7 @@ public class Driver {
                 default -> {
                     WebDriverManager.chromedriver().setup();
                     drivers.set(new ChromeDriver());
+                    System.setProperty("webdriver.chrome.whitelistedIps", "");
                 }
             }
         }
