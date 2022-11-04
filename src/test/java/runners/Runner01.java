@@ -11,7 +11,7 @@ import utils.Driver;
 @CucumberOptions(
         features = {"src/test/java/features/Feature1.feature"},
         glue = {"stepdefs"},
-        plugin = { "pretty", "/var/lib/jenkins/jobs/Driver_JDBC/builds/1/cucumber-html-reports/.cache/test-output/cucumber-reports/Cucumber.json",
+        plugin = { "pretty", "json:test-output/cucumber-reports/Cucumber.json",
                 "testng:test-output/cucumber-reports/Cucumber.xml",
                 "html:test-output/cucumber-reports/Cucumber.html"}
 
